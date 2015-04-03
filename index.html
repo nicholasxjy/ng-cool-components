@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <title>DEMO</title>
+  </head>
+  <link rel="stylesheet" href="./src/ng-cool-components.css">
+  <link rel="stylesheet" type="text/css" href="./bower_components/fontawesome/css/font-awesome.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <style type="text/css">
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f5f5f5;
+    }
+    .main {
+      width: 600px;
+      background-color: #ffffff;
+      margin: 40px auto;
+    }
+    .tooltip {
+      padding: 20px;
+    }
+    .avatar-link {
+      margin-left: 30px;
+    }
+    .popover {
+      margin-top: 40px;
+      padding: 20px;
+    }
+    a {
+      cursor: pointer;
+    }
+  </style>
+  <body ng-controller="MainCtrl">
+    <div class="main">
+      <div class="tooltip">
+        <a href="https://twitter.com/Normal_Geek_Xue" ng-cool-tooltip="Nicholas">Nicholas</a> <br>
+        <a href="https://twitter.com/Normal_Geek_Xue" ng-cool-tooltip="Find me on twitter :-)" position="bottom">Normal Geek Xue</a>
+
+        <a href="https://twitter.com/Normal_Geek_Xue" class="avatar-link">
+          <img src="./img/demo.png" width="40px" height="40px" ng-cool-tooltip="Normal_Geek_Xue">
+        </a>
+      </div>
+
+      <div class="popover">
+        <a ng-cool-popover="1" source="unReadNotis">Messages</a>
+        <a ng-cool-popover="2" source="tip" style="margin-left: 30px">Just pop tip</a>
+      </div>
+    </div>
+    <script src="./bower_components/angular/angular.js"></script>
+    <script src="./src/ng-cool-components.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

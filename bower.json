@@ -1,0 +1,28 @@
+{
+  "name": "ng-cool-components",
+  "version": "0.0.0",
+  "authors": [
+    "nicholasxjy <yitaqi2011@gmail.com>"
+  ],
+  "description": "Some web components based on angular js",
+  "keywords": [
+    "angular",
+    "web",
+    "tooltip",
+    "popover",
+    "gallery",
+    "slide"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.15",
+    "fontawesome": "~4.3.0"
+  }
+}
